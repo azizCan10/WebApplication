@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    {% from "includes/formhelpers.html" import render_field %}  
+
+    <h3>Kullanıcı Girişi</h3>
+
+    <form method="post">
+        {{ render_field(form.email) }}
+        {{ render_field(form.password) }}
+        
+        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+    </form>
+{% endblock body %}

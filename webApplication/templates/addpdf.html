@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h3>Pdf Ekle</h3>
+    <form method="post" enctype=multipart/form-data>
+        <input type="file" name="file" accept="application/pdf" />
+        <button type="submit" class="btn btn-secondary">Yükle</button>
+    </form>
+    <p>
+        {{ message }}
+    </p>
+
+    {% if pdfs %} 
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">İsim</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for pdf in pdfs %}
+                <tr>
+                    <th scope="row">{{pdf.PdfId}}</th>
+                    <td>{{pdf.PdfName}}</td>
+                </tr>
+            {% endfor %}
+            
+            </tbody>
+        </table>
+    {% else %}
+        <div class = "alert-alert-danger">Bu blokta henüz pdf bulunmuyor</div>
+    {% endif %}
+{% endblock body %}

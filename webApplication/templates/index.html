@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class = "jumbotron text-center", >
+        {% if session["admin"] %}
+            Siteye hoşgeldiniz, Admin
+        {% elif session["logged_in"] %}
+            Siteye hoşgeldiniz, {{session["email"]}}
+        {% else %}
+            Siteye hoşgeldiniz, lütfen giriş yapınız ya da kayıt olunuz.
+            <br><br>
+        Kullanıcı girişi yaparak PDF ekleyebilir ve PDF'lerinizi görüntüleyebilir, Admin girişi yaparak Kullanıcıları ve PDF'leri kontrol edebilirsiniz.
+        {% endif %}
+    </div>   
+{% endblock body %}

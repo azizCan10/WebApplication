@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h3>Yönetim Paneli</h3>
+
+    <br><br>
+
+    <h4>Kullanıcılar</h4>
+
+    {% if users %}
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">İsim</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+
+        {% for user in users %}
+            <tr>
+                <th scope="row">{{user.UserId}}</th>
+                <td>{{user.UserName}}</td>
+                <td><a href="/edit/{{user.UserId}}" class = "btn btn-danger">Güncelle</a></td>
+                <td><a href="/delete/{{user.UserId}}" class = "btn btn-danger">Sil</a></td>
+            </tr>
+        {% endfor %}
+        
+        </tbody>
+      </table>
+    {% endif %}
+
+    <br><br>
+    <form method="post">
+      <button type="submit" class="btn btn-dark">Kullanıcı Ekle</button>
+    </form>
+    
+    
+{% endblock body %}

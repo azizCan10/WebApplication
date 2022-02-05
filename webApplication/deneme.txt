@@ -1,0 +1,130 @@
+KOCAELİ ÜNİVERSİTESİ  
+
+MÜHENDİSLİK FAKÜLTESİ 
+
+ 
+
+BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ 
+
+ 
+
+ 
+
+BİTİRME PROJESİ 
+
+ 
+
+İLETİM HATLARINDA EMPEDANS TABANLI ARIZA YERİ TESPİTİ İÇİN YENİ BİR 
+
+YAKLAŞIM 
+
+ 
+
+ALİ EKEN 
+
+ 
+
+ 
+
+Prof.Dr. Nevcihan Duru 
+
+Danışman, Kocaeli Üniv. 
+
+Doç.Dr. Sevinç İLHAN OMURCA 
+
+Jüri Üyesi, Kocaeli Üniv.  
+
+Dr. Öğr. Üyesi Orhan AKBULUT 
+
+Jüri Üyesi, Kocaeli Üniv. 
+
+................................................ 
+
+................................................ 
+
+................................................ 
+
+Tezin Savunulduğu Tarih: 01.06.2018 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Bu dokümandaki tüm bilgiler, etik ve akademik kurallar çerçevesinde elde edilip sunulmuştur. 
+Ayrıca yine bu kurallar çerçevesinde kendime ait olmayan ve kendimin üretmediği ve başka 
+kaynaklardan elde edilen bilgiler ve materyaller (text, resim, şekil, tablo vb.) gerekli şekilde 
+referans edilmiş ve dokümanda belirtilmiştir. 
+
+ 
+
+ 
+
+Öğrenci No: 170201025 
+
+Adı Soyadı: Ali EKEN 
+
+İmza:………………………………….. 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+İLETİM HATLARINDA EMPEDANS TABANLI  ARIZA YERİ TESPİTİ  İÇİN YENİ 
+BİR YAKLAŞIM  
+
+ÖZET 
+
+Bu  çalışmanın  amacı,  iletim  hatlarında  arıza  yeri  tespiti  için  empedansa  dayalı  algoritmaları 
+incelemek ve seri kompanze edilmiş hatlar için yeni bir algoritma geliştirmektir.  
+
+Öncelikle,  tek  yada  iki  baradan  alınan  ölçümleri  kullanarak  arıza  yerini  belirleyen  temel 
+algoritmalar  tanımlanmıştır.  Örnek  test  sistemleri  üzerinde  sistem  ve  arızaya  ilişkin 
+parametreler  değiştirilerek, 
+temel  arıza  yeri  algoritmalarından  elde  edilen  sonuçlar 
+karşılaştırılmıştır.  Sistem  parametreleri  hat  modeli  ve  sistemin  homojen  olup  olmama 
+durumlarını  kapsarken,  arızaya  ilişkin  parametreler  arıza  tipi,  konumu  ve  direnci  olarak 
+alınmıştır. 
+
+Seri  kompanze  edilmiş  iletim  hatlarında  empedansa  dayalı  geliştirilmiş  temel  algoritmaların 
+yeterli olmadığı, bu duruma özel algoritmaların gerekliliği bir uygulama ile gösterilmiştir. Bu 
+özel  algoritmalar  incelenerek  kısaca  özetlenmiştir.  Buradan  hareketle,  iletim  hatlarında  seri 
+kompanzasyon durumunu dikkate alan performansa dayalı yeni bir arıza yeri tespiti algoritması 
+bu tez kapsamında geliştirilmiştir. 
+
+Geliştirilen bu algoritma, hat bilgileri ve iki baradan alınan ölçümleri kullanarak iteratif olarak 
+arıza  yerini  hesaplayan,  bütün  örneklerdeki  sonuçları  karşılaştırarak  minimum  hata  ile  bir 
+sonuca  ulaşan  bir  algoritmadır.  Önerilen  algoritma,  hem  temel  algoritmalar  hem  de  seri 
+kompanze  edilmiş  iletim  hatları  için  tasarlanmış,  iki  farklı  algoritma  türü  ile  çeşitli  test 
+sistemleri  üzerinde  denenmiş,  alınan  sonuçlar  karşılaştırılmıştır.  Test  sistemleri  DigSILENT 
+üzerinde  modellenmiş  ve  kısadevre  analizleri  yapılmış  olup,  bu  sistemden  alınan  akım  ve 
+gerilim bilgileri MATLAB ortamında kodlanan algoritmalar için kullanılmıştır. 
+
+Anahtar  kelimeler:  Arıza  Yeri  Bulma  Algoritmaları,  İletim  Hatları,  MOV,  PMU,  Seri 
+Kapasitör. 
+
+ 
+
+ 
+
+ 
+
+

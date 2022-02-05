@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h3>Sorgu1</h3>
+    <br><br>
+
+    <br>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Sorgu</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Yazar</td>
+                    <td><a href="/searchyazar" class = "btn btn-danger">Sorgula</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Ders</td>
+                    <td><a href="/searchders" class = "btn btn-danger">Sorgula</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Proje Adı</td>
+                    <td><a href="/searchprojeadi" class = "btn btn-danger">Sorgula</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Anahtar kelimeler</td>
+                    <td><a href="/searchanahtarkelimeler" class = "btn btn-danger">Sorgula</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Dönem</td>
+                    <td><a href="/searchdonem" class = "btn btn-danger">Sorgula</a></td>
+                </tr>
+            
+            </tbody>
+          </table>
+
+{% endblock body %}

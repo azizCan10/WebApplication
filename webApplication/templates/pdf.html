@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    {% if pdf %}
+        <h4>{{pdf.PdfName}}</h4>
+        <br><br>
+        <b>Yazar Adı:</b> {{pdf.AuthorName}}
+        <br><br>
+        <b>Yazar No:</b> {{pdf.AuthorNo}}
+        <br><br>
+        <b>Yazar Öğretim Türü:</b> {{pdf.AuthorOgretimTuru}}
+        <br><br>
+        <b>Ders Adı:</b> {{pdf.LessonName}}
+        <br><br>
+        <b>Proje Özeti:</b> {{pdf.ProjectSummary}}
+        <br><br>
+        <b>Projenin Teslim Edildiği Dönem:</b> {{pdf.ProjeninTeslimEdildigiDonem}}
+        <br><br>
+        <b>Proje Başlığı:</b> {{pdf.ProjectTitle}}
+        <br><br>
+        <b>Anahtar Kelimeler:</b> {{pdf.Keywords}}
+        <br><br>
+        <b>Danışman Bilgileri:</b> {{pdf.Consultants}}
+        <br><br>
+        <b>Jüri Bilgileri:</b> {{pdf.Juries}}
+        <br><br>
+    {% else %}
+      <div class="alert alert-warning">Böyle bir pdf bulunmuyor</div>
+    {% endif %}
+{% endblock body %}

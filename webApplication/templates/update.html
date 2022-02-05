@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    {% from "includes/formhelpers.html" import render_field %}
+
+    <h3>Kullanıcı Güncelle</h3>
+
+    <form method="post">
+        {{ render_field(form.email, class="form-control") }}
+        {{ render_field(form.password, class="form-control") }}
+        
+        <button type="submit" class="btn btn-primary">Güncelle</button>
+    </form>
+{% endblock body %}

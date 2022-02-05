@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="/">Ana Sayfa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/register">Kayıt ol</a>
+          </li>
+        {% if session["logged_in"] %}
+          <li class="nav-item active">
+            <a class="nav-link" href="/addpdf">Pdf Ekle</a>
+          </li>
+        {% endif %}
+
+        {% if session["admin"] %}
+          <li class="nav-item active">
+            <a class="nav-link" href="/dashboard">Yönetim Paneli</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/pdfs">PDF'ler</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/sorgu1">Sorgu 1</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/sorgu2">Sorgu 2</a>
+          </li>
+        {% endif %}
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/login">Kullanıcı Girişi</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/admin">Admin Girişi</a>
+          </li>       
+          <li class="nav-item active">
+            <a class="nav-link" href="/logout">Çıkış Yap</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
