@@ -1,3 +1,3 @@
-Python-Flask dili kullanılarak yazılmıştır
+Written with Python-Flask
 
-Visual Studio Code idesinde çalıştırılması tavsiye edilir
+Visual Studio Code ide is recommended
